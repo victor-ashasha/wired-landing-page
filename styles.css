@@ -45,6 +45,7 @@ header li a {
 
 }
 
+
 .sign-in{
     color: black;
     text-decoration: none;
@@ -71,4 +72,30 @@ header li a {
 }
 .search {
     margin-right: 2.5em;
+}
+@media screen and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+    .sign-in, .search, .vertical-line{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 820px) {
+    .ideas, .security, .science{
+        display: none;
+    }
+    .gear::after{
+        content: url(../wired-landing-page/images/more-arrow.png);
+        margin: 10px;
+        color: black;
+    }
+    
+   
 }
